@@ -1,0 +1,51 @@
+@import "../../config/Config.scss";
+@import "../../config/Variables.scss";
+
+.button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &__container:hover{
+        color: $primary-color;
+        transition: 0.3s ease-in-out;
+    }
+    &__container{
+        width: 155px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $text-color;
+        cursor: pointer;
+
+        @include mobile {
+            width: pl(155);
+            height: pl(45);
+        }
+
+        .watch-icon{
+            width: 20px;
+            height: 20px;
+            padding-right: 10px;
+
+            @include mobile {
+                width: pl(20);
+                height: pl(20);
+                padding-right: pl(10);
+            }
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            @include mobile {
+                font-size: pl(13);
+            }
+        }
+    }
+    
+}

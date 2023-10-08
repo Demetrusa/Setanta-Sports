@@ -1,0 +1,97 @@
+@import "../../config/Config.scss";
+@import "../../config/Variables.scss";
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: $secondary-color;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer__cont-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__container {
+            width: 341px;
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+    
+           .logo{
+            background-image: url(../img/site-logo-home.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 150px;
+            height: 45px;
+           }
+    
+           p{
+            width: 71%;
+            padding-top: 20px;
+            font-size: 14px;
+            line-height: 13px;
+            color: $text-color;
+            color: $text-color-two;
+    
+           }
+           h2{
+               color: $text-color-two;
+           }
+        
+           &-textWrap{
+            width: 100%;
+            
+            p{
+                padding-top: 12px;
+                cursor: pointer;
+                color: $text-color;
+            }
+            p:hover{
+                color: $primary-color;
+                transition: 0.3s ease-in-out;
+            }
+           }
+           &-logoBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            div{
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 100px;
+                height: 35px;
+                margin-top: 32px;
+            }
+    
+            .appstore-logo{
+                background-image: url(../img/appstore-img.png);
+            }
+            .playstore-logo{
+                background-image: url(../img/plstore-img.png);
+                height: 30px;
+                margin-top: 35px;
+    
+            }
+           }
+        }
+    }
+    .footer__line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 72%;
+        margin-top: 30px;
+        height: 1px;
+        background-color: $text-color;
+    }
+}
