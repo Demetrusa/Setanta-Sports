@@ -52,11 +52,11 @@ const Footer = () => {
             <div className="footer__termsBox">
                 <h2>© Eurasian Broadcasting Enterprise Limited 2023 All rights reserved</h2>
                 <div className="footer__iconBox">
-                    <FontAwesomeIcon icon={faFacebookF} />
-                    <FontAwesomeIcon icon={faInstagram} />
-                    <FontAwesomeIcon icon={faYoutube} />
-                    <FontAwesomeIcon icon={faAppStore} />
-                    <FontAwesomeIcon icon={faGooglePlay} />
+                    <FontAwesomeIcon icon={faFacebookF} className="icon"/>
+                    <FontAwesomeIcon icon={faInstagram} className="icon"/>
+                    <FontAwesomeIcon icon={faYoutube} className="icon"/>
+                    <FontAwesomeIcon icon={faAppStore} className="icon"/>
+                    <FontAwesomeIcon icon={faGooglePlay} className="icon"/>
                 </div>
             </div>
         </div>

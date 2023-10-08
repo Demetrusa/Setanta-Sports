@@ -3,8 +3,6 @@
 
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
@@ -14,37 +12,84 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile{
+        padding: pl(10);
+    }
+
     .footer__cont-box{
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        @include mobile{
+            flex-wrap: wrap;
+
+        }
+        .footer__container:nth-child(2){
+            @include mobile{
+                width: 50%;
+                margin-top: 10px;
+            }
+        }
+        .footer__container:nth-child(3){
+            @include mobile{
+                width: 50%;
+                align-items: start;
+                margin-top: -10px;
+            }
+        }
+        .footer__container:nth-child(4){
+            @include mobile{
+                padding-top: pl(30);
+            }
+        }
         .footer__container {
             width: 341px;
-            height: 170px;
+            height: auto;
             display: flex;
             flex-direction: column;
             align-items: start;
-    
+
+            @include mobile{
+                width: 90%;
+            }
+
            .logo{
             background-image: url(../img/site-logo-home.svg);
             background-repeat: no-repeat;
             background-size: 100%;
             width: 150px;
             height: 45px;
+
+            @include mobile {
+                width: pl(150);
+                height: pl(45);
+            }
            }
     
            p{
             width: 71%;
             padding-top: 20px;
             font-size: 14px;
-            line-height: 13px;
-            color: $text-color;
+            line-height: 15px;
             color: $text-color-two;
+
+            @include mobile{
+                width:100% ;
+                padding-top: pl(10);
+                font-size: pl(12);
+                line-height: pl(15);
+
+            }
     
            }
            h2{
                color: $text-color-two;
+               font-size: 14px;
+
+               @include mobile{
+                font-size: pl(12);
+               }
            }
         
            &-textWrap{
@@ -54,6 +99,10 @@
                 padding-top: 12px;
                 cursor: pointer;
                 color: $text-color;
+
+                @include mobile{
+                    padding-top: pl(12);
+                }
             }
             p:hover{
                 color: $primary-color;
@@ -71,6 +120,12 @@
                 width: 100px;
                 height: 35px;
                 margin-top: 32px;
+
+                @include mobile{
+                    width: pl(100);
+                    height: pl(35);
+                    margin-top: pl(0);
+                }
             }
     
             .appstore-logo{
@@ -80,6 +135,11 @@
                 background-image: url(../img/plstore-img.png);
                 height: 30px;
                 margin-top: 35px;
+
+                @include mobile{
+                    height: pl(30);
+                    margin-top: pl(3);
+                }
     
             }
            }
@@ -93,5 +153,60 @@
         margin-top: 30px;
         height: 1px;
         background-color: $text-color;
+
+        @include mobile{
+            width: 95%;
+            margin-top: pl(15);
+            height: pl(1);
+        }
+    }
+    .footer__termsBox{
+        width: 73%;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile{
+            width: 95%;
+            margin: pl(50) auto;
+            flex-direction: column-reverse;
+        }
+
+        h2{
+            font-size: 14px;
+            color: $text-color-two;
+
+            @include mobile{
+               font-size: pl(12);
+               padding-top: pl(25);
+            }
+        }
+        .footer__iconBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 200px;
+
+            @include mobile{
+                width: 50%;
+            }
+    
+            .icon {
+                width: 17px;
+                height: 17px;
+                color: $text-color-two;
+                cursor: pointer;
+
+                @include mobile{
+                    width: pl(17);
+                    height: pl(17);
+                }
+            }
+            .icon:hover{
+                color: $primary-color;
+                transition: 0.3s ease-in-out;
+            }
+        }
     }
 }
