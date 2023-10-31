@@ -47,8 +47,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer__line">
-            </div>
             <div className="footer__termsBox">
                 <h2>© Eurasian Broadcasting Enterprise Limited 2023 All rights reserved</h2>
                 <div className="footer__iconBox">

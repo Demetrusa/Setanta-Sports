@@ -2,6 +2,7 @@ import './App.scss';
 import Button from './components/button/Button.jsx';
 import Navbar from './layout/Navbar.jsx';
 import Footer from './layout/footer/Footer';
+import Leagues from './layout/leagues/Leagues';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Button />
         </div>
       </div>
+      <Leagues />
       <Footer />
     </div>
   );

@@ -2,12 +2,13 @@
 @import "../config/Variables.scss";
 
 .navbar {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     width: 100%;
     color: $text-color;
     text-align: center;
+
+    @include mobile{
+        width: 30%;
+    }
 
     &__container{
         width:100%;

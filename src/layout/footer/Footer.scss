@@ -11,31 +11,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 
     @include mobile{
         padding: pl(10);
+        align-items: start;
     }
 
     .footer__cont-box{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
+        width: 80%;
+        border-bottom: 1px solid white;
+        padding: 0px 0px 50px 0px;
 
         @include mobile{
             flex-wrap: wrap;
+            padding: 0vw 0vw pl(50) 0vw;
 
         }
         .footer__container:nth-child(2){
             @include mobile{
                 width: 50%;
-                margin-top: 10px;
+                margin-top: pl(10);
             }
         }
         .footer__container:nth-child(3){
             @include mobile{
                 width: 50%;
                 align-items: start;
-                margin-top: -10px;
+                margin-top: pl(9);
             }
         }
         .footer__container:nth-child(4){
@@ -145,35 +151,22 @@
            }
         }
     }
-    .footer__line{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 72%;
-        margin-top: 30px;
-        height: 1px;
-        background-color: $text-color;
-
-        @include mobile{
-            width: 95%;
-            margin-top: pl(15);
-            height: pl(1);
-        }
-    }
     .footer__termsBox{
         width: 73%;
-        margin: 100px auto;
+        margin: 36px auto 80px auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
 
         @include mobile{
             width: 95%;
-            margin: pl(50) auto;
+            margin: pl(50) auto pl(60) auto;
             flex-direction: column-reverse;
         }
 
         h2{
+            width: 80%;
             font-size: 14px;
             color: $text-color-two;
 
