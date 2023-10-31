@@ -1,10 +1,12 @@
 import React from "react";
-import "Nav.scss";
+import "./Nav.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 const Nav = () =>{
     return(
-        <div className="Nav">
+        <div className="nav">
             <div className="nav__row">
                 <div className="nav__row-logo">
                     <h2>Sneak</h2>
@@ -15,7 +17,9 @@ const Nav = () =>{
                     <p>Shoes</p>
                     <p>Racing Boots</p>
                     <p>Contact</p>
-                    <div className="loop"></div>
+                    <div className="loop">
+                        <FontAwesomeIcon icon={faInstagram} className="icon"/>
+                    </div>
                     <div className="cart"></div>
                 </div>
             </div>
