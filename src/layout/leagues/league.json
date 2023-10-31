@@ -1,9 +1,0 @@
- {
-    "leagues": [
-        {
-            "id": 1,
-            "group_id": 1,
-            "image_url": "./league-images/premL.png"
-        }
-    ]
-}
